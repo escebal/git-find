@@ -1,0 +1,17 @@
+.favoriteItemContainer {
+    background-color: slateblue;
+    padding: 20px;
+    height: 120px;
+  }
+  .title {
+    color: white;
+    font-size: 17px;
+  }
+  
+  .text {
+    color: yellow;
+    font-size: 14;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  

@@ -1,0 +1,13 @@
+.repoItemContainer {
+  background-color: turquoise;
+  padding: 20px;
+}
+.title {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+.itemText {
+  color: black;
+  font-size: 14;
+}
