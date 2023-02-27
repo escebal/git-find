@@ -21,6 +21,24 @@
 }
 .navTitle {
   color: white;
+  font-family: Futura;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.navName {
+  color: yellow;
+  text-transform: capitalize;
+  padding-left: 8px;
+  font-family: Futura;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.navExpression {
+  color: white;
+  padding-right: 8px;
+  font-family: Futura;
+  letter-spacing: 2px;
+  font-size: 25px;
 }
 .inputContainer {
   display: flex;
@@ -28,6 +46,9 @@
   justify-content: center;
   align-items: center;
   width: 50%;
+  font-family: Futura;
+  letter-spacing: 2px;
+  font-size: 25px;
 }
 .searchInput {
   background: #f9fbfc;
@@ -40,6 +61,7 @@
   font-weight: 400;
   color: #1e1e1f;
   box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+  font-family: ProximaNova;
 }
 .searchIconContainer {
   background-color: black;
@@ -51,9 +73,9 @@
   border: none;
   cursor: pointer;
   font-size: 14px;
-  text-transform: uppercase;
   color: #fafafa;
   display: flex;
+  padding-top: 5px;
   justify-content: center;
   align-items: center;
 }
@@ -62,39 +84,78 @@
 }
 /* body */
 .bodyContainer {
-  box-shadow: 0px 0px 50px rgb(127, 127, 127);
+  box-shadow: 0px 10px 60px -3px rgba(0, 0, 0, 0.3);
   display: grid;
   grid-template-columns: 2fr 1fr;
-  margin: 40px
+  margin: 30px;
 }
 .reposContainer {
-  background-color: antiquewhite;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  padding: 30px
+  padding: 30px;
+  border-right: 2px solid rgb(216, 216, 216);
 }
 /* favorite card */
 .favoritesContainer {
   display: grid;
   grid-template-rows: 10% 90%;
+  background-color: white;
 }
 .favoriteHeader {
   background-color: black;
-}
-.favoriteTitle {
-  color: white;
-  font-size: 20;
-  text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.favoriteHeaderTitle {
+  color: white;
+  text-transform: uppercase;
+  font-family: Futura;
+  letter-spacing: 2px;
+  font-size: 25px;
+}
+.scrolling {
+  overflow-y: scroll;
+  height: 70vh;
+  min-height: 0px;
+}
 .favItemContainer {
-  background-color: white;
   padding: 20px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   gap: 10px;
 }
+.backAndNext {
+  background-color: darkgrey;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 14px;
+  font-family: ProximaNova;
+}
+.buttonRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
 
+@media only screen and (max-width: 550px) {
+  .favoriteHeader {
+    width: 100%;
+  }
+  .navContainer {
+    background-color: red;
+    width: 100%;
+  }
+  .navTitle,
+  .navName,
+  .navExpression {
+    font-size: 13px;
+  }
+  .searchInput {
+    font-size: 14px;
+    padding-left: 12px;
+  }
+}

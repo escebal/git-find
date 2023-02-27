@@ -6,7 +6,7 @@
   font-size: 14px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #FAFAFA;
+  color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,5 +16,4 @@
 
 .buttonContent:hover {
   background-color: #003003;
-  
 }

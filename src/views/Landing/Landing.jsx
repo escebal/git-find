@@ -2,18 +2,16 @@ import React, { useState } from "react";
 import "./Landing.css";
 import { Link } from "react-router-dom";
 import Button from "../../components/Button/Button";
+import { useLocalStorage } from "../../hooks/useLocalStorage";
+import { NAME } from "../../shared/Constants";
 
 function Landing() {
   const [input, setInput] = useState("");
+  const { setValue } = useLocalStorage(NAME, []);
 
   const handleOnChange = (e) => {
     const addName = e.target.value;
     setInput(addName);
-    console.log(input);
-  };
-
-  const saveName = () => {
-    localStorage.setItem("nombre", input);
   };
 
   return (
@@ -33,7 +31,7 @@ function Landing() {
         />
         <div className="linkContainer">
           <Link to="/search">
-            <Button onClick={saveName} />
+            <Button onClick={() => setValue(input)} />
           </Link>
         </div>
       </div>

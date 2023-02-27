@@ -1,17 +1,47 @@
 .favoriteItemContainer {
-    background-color: slateblue;
-    padding: 20px;
-    height: 120px;
+  background-color: blueviolet;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+}
+.favoriteRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.titleFavorites {
+  color: white;
+  font-family: ProximaNova;
+}
+.titleUppercase {
+  color: white;
+  text-transform: uppercase;
+  padding: 0 7px;
+  font-family: ProximaNova;
+}
+.separator {
+  background-color: white;
+  height: 3px;
+  box-shadow: 5px white;
+}
+.favoriteNameContent {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.textFavorites {
+  color: yellow;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: ProximaNova;
+}
+
+@media only screen and (max-width: 550px) {
+  .favoriteItemContainer {
+    width: 100%;
   }
-  .title {
-    color: white;
-    font-size: 17px;
-  }
-  
-  .text {
-    color: yellow;
-    font-size: 14;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
+}

@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: "Futura";
+  src: url("./utils/fonts/Futura.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  src: url("./utils/fonts/ProximaNova.otf") format("truetype");
+}

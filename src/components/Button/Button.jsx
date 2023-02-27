@@ -4,7 +4,7 @@ import "./Button.css";
 function Button({ onClick }) {
   return (
     <button className="buttonContent" onClick={onClick}>
-      Hola
+      Entrar
     </button>
   );
 }
