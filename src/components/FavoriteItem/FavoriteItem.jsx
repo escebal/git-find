@@ -10,6 +10,7 @@ function FavoriteItem({ name }) {
   useEffect(() => {
     setPersonalName(getValue());
   }, []);
+
   return (
     <div className="favoriteItemContainer">
       <div className="favoriteRow">

@@ -3,7 +3,7 @@ import SearchIcon from "../../assets/icons/Search";
 import { useLocalStorage } from "../../hooks/useLocalStorage";
 import { NAME } from "../../shared/Constants";
 
-const HomeHeader = ({ setSearchValue, searchRepositories, searchValue }) => {
+const HomeHeader = ({ setSearchValue, searchRepositories }) => {
   const { getValue } = useLocalStorage(NAME, []);
   const [name, setName] = useState("");
 
@@ -28,7 +28,8 @@ const HomeHeader = ({ setSearchValue, searchRepositories, searchValue }) => {
         />
         <div className="searchIconContainer">
           <button
-            onClick={() => searchRepositories(searchValue)}
+            data-testid="search-button"
+            onClick={searchRepositories}
             className="buttonSearch"
           >
             <SearchIcon size="30pt" />

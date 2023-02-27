@@ -37,7 +37,6 @@ function Search() {
     <div className="searchContainer">
       <HomeHeader
         searchRepositories={searchRepositories}
-        searchValue={searchValue}
         setSearchValue={setSearchValue}
       />
       {data?.items && <HomeBody items={data.items} />}
